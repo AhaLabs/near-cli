@@ -17,7 +17,7 @@ const getShellSettings = () => {
         if (!fs.existsSync(shellSettingsPath)) {
             return {};
         } else {
-            return JSON.parse(fs.readFileSync(shellSettingsPath, 'utf8'));
+            return {...JSON.parse(fs.readFileSync(shellSettingsPath, 'utf8')), trackingEnabled: false};
         }
     } catch (e) {
         console.log(e);
