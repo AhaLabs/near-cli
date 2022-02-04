@@ -8,21 +8,7 @@ const SETTINGS_FILE_NAME = 'settings.json';
 const SETTINGS_DIR = '.near-config';
 
 const getShellSettings = () => {
-    const nearPath = path.join(homedir, SETTINGS_DIR);
-    try {
-        if (!fs.existsSync(nearPath)) {
-            fs.mkdirSync(nearPath);
-        }
-        const shellSettingsPath = path.join(nearPath, SETTINGS_FILE_NAME);
-        if (!fs.existsSync(shellSettingsPath)) {
-            return {};
-        } else {
-            return JSON.parse(fs.readFileSync(shellSettingsPath, 'utf8'));
-        }
-    } catch (e) {
-        console.log(e);
-    }
-    return {};
+    return {trackingEnabled: false};
 };
 
 const saveShellSettings = (settings) => {
