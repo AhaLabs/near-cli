@@ -4280,9 +4280,9 @@ ncp@^2.0.0:
   resolved "https://registry.yarnpkg.com/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
   integrity sha1-GVoh1sRuNh0vsSgbo4uR6d9727M=
 
-"near-api-js@git+https://github.com/ahalabs/near-api-js#1.0.0-0":
+"near-api-js@git+https://github.com/ahalabs/near-api-js#beta":
   version "0.44.2"
-  resolved "git+https://github.com/ahalabs/near-api-js#1dd9e6ca861293b3abd7c59cc5acc72d24be851f"
+  resolved "git+https://github.com/ahalabs/near-api-js#244410b2dde2b8b19e154ed27fc2541ca737c448"
   dependencies:
     bn.js "5.2.0"
     borsh "^0.7.0"
